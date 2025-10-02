@@ -1,0 +1,310 @@
+body {
+  font-family: 'Noto Sans JP',sans-serif;
+  font-size: 16px;
+  color: #4C566A;
+}
+
+button {
+  all: unset;
+  display: inline-block;
+  background-color: #4C566A;
+  color: #ECEFF4;
+  border-radius: 10px;
+  font-weight: bold;
+  width: 180px;
+  height: 52px;
+  text-align: center;
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  right: 12px;
+}
+
+
+/* ヘッダー */
+
+header {
+  height: 70px;
+  background-color: #ECEFF4;
+}
+
+#header-inner {
+  height: 70px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  height: auto;
+  max-width: 55px;
+}
+
+header button {
+  width: 147px;
+  height: 42px;
+}
+
+/* メインビジュアル */
+
+#main-section {
+  background-color: #ECEFF4;
+}
+
+#main {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row; 
+  padding-top: 64px;
+}
+
+#main-left {
+  display: flex;
+  flex-direction: column;
+  width: 379px;
+}
+
+#main-left h1 {
+  color: #4C566A;
+  font-size: 38px;
+  margin-bottom: 24px;
+}
+
+#main-left p {
+  color: #4C566A;
+  font-size: 18px;
+  margin: 6px;
+  line-height: normal;
+}
+
+#main-left button {
+  margin-top: 30px;
+}
+
+/* 快適さへのこだわり */
+
+#feature {
+  text-align: center;  
+  margin-top: 80px;
+  display: block;
+}
+
+#feature h2 {
+  font-size: 24px;
+}
+
+#feature-text {
+  width: 90%;
+  margin: 80px auto;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+#feature-text h3 {
+  font-size: 18px;
+}
+
+.feature-box {
+  width: 344px;
+}
+
+.feature-box  img {
+  background-color: #ECEFF4;
+  width: 40px;
+  border-radius: 50%; 
+  padding: 10px;
+}
+
+/* .docの機能 */
+
+#function {
+  background-color: #2D3440;
+  padding-bottom: 60px;
+}
+
+#function-content {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#function-content h2 {
+  color: #ECEFF4;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.function-box {
+  margin-top: 64px;
+  align-items: center;
+  gap: 56px;
+  display: flex;
+}
+
+.function-box-img{
+  height: auto;
+  width: 100%;
+  display: block;
+  min-width: 150px;
+  flex: 1 1 auto;
+  object-fit: contain;
+}
+
+.function-text {
+  color: #ECEFF4;
+  text-align: left;
+  flex: 0 1 364px;
+  max-width: 364px;
+  min-width: 150PX;
+}
+
+.function-text-left {
+  display: block;
+  color: #ECEFF4;
+  text-align: left;
+  flex: 0 1 364px;
+  max-width: 364px;
+  min-width: 150PX;
+}
+
+/* フッター */
+
+footer {
+  display: flex;
+  margin: 0 auto;
+  padding: 100px 0 30px 0 ;
+  width: 90%;
+  justify-content: space-between;
+}
+
+#footer-menu {
+  display: flex;
+}
+
+#footer-menu a {
+  text-decoration: none;
+  display: inline;
+  color: #4C566A;
+}
+
+#footer-menu a:visited {
+  color: #4C566A;
+}
+
+#footer-menu p {
+  display: inline;
+  margin: 0 6px;
+  color: #4C566A;
+}
+
+/* フッター終わり */
+
+
+/* SP対応 */
+
+@media screen and (max-width: 768px) {
+
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  /* メイン */
+  
+  #main {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #main-left {
+    order: 2;
+  }
+
+  #main-right {
+    order: 1;
+  }
+  
+  #main-right img {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* 快適さへのこだわり */
+
+  #feature-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  /* .docの機能 */
+
+  #function {
+    padding-bottom: 40px;
+  }
+
+  .function-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    margin: 40px auto 40px auto;
+  }
+
+  .function-text {
+    flex: 1 1 auto;
+  }
+
+  .function-text-left {
+    flex: 1 1 auto;
+    order: 2;
+  }
+
+  #function-box-img-left {
+    order: 1;
+  }
+
+/* フッダー */
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+
+  #footer-menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  #footer-menu p {
+    display: none;
+  }
+
+  #copylight {
+    margin: 0 auto;
+  }
+
+  }
