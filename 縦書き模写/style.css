@@ -238,11 +238,95 @@ li:last-child {
 /* スマホ対応 */
 
 @media screen and (max-width: 768px) {
+
+/* ヘッダー */
+
   header {
     background: url(img/mainvisual-sp.jpg) no-repeat center/cover !important;
     background-size: cover;
     background-position: center;
     aspect-ratio: 5 / 8; 
   }
+
+  #logo {
+  margin-top: 60px;
+  margin-right: 10px;
+  }
+
+  #header-menu {
+    margin-top: 60px;
+    gap: 25px;
+    margin-right: 12%;
+  }
+
+  /* ニュース */
+
+  ul li:nth-of-type(n+7) {
+    display: none;
+  }
+
+  ul li:nth-of-type(n+6) {
+    border-left: 1px solid;
+  }
+
+  /* プロダクト */
+
+  #product {
+  width: 90%;
+  margin: 100px auto;
+  display: block;
+}
+
+#new-values {
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  margin-bottom: 10%;
+  margin-left: auto;
+}
+
+#science {
+  display: flex;
+  position: relative;
+  width: 70%;
+  margin-bottom: 10%;
+  margin-right: auto;
+}
+
+.product-title {
+  font-size: 24px;
+}
+
+.product-sentence {
+  display: none;
+}
+
+.product-img {
+  margin-top: 15%;
+  width: 301px;
+  display: flex;
+}
+
+.product-img-text-first ,
+.product-img-text-second {
+  width: 192px;
+  height: 100px;
+}
+
+.product-img-text-first p ,
+.product-img-text-second p {
+  font-size: 14px;
+}
+
+/* フッター */
+
+#address {
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+#footer-menu {
+  font-size: 14px;
+}
 
 }
